@@ -182,9 +182,9 @@ There are some tools which can help use to determine how the browser will calcul
 ## Cascade
 
 Styles Sheets are read from top to bottom.  
-This means that in the case that there are declarations applied to the same element and with the same specificity value the one which was loaded last will take precedence.
+This means that in the case that there are declarations applied to the same element and with the same specificity value the style which was loaded last will take precedence.
 
-This also applies to declaration written on the same block.
+This also applies to declarations written on the same block.
 
 ```CSS
 p {
