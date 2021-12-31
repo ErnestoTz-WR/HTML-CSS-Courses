@@ -228,3 +228,38 @@ a:focus {
   outline: 1px solid black;
 }
 ```
+
+There is also relational pseudo-classes:
+- `first-child`
+- `last-child`
+- `first-of-type`
+- `last-of-type`
+
+```CSS
+p:first-child {
+  /* This code will be applied to the first paragraph element. If the first child element is something different than a paragraph then, this selector won't be applied. */
+}
+p:first-of-type {
+  /* This code will be applied to the first paragraph element. If the first child element is something different than a paragraph then, that element is skipped and the program will look for the first paragraph element. */
+}
+```
+
+## Relational Selectors
+
+We can also select parts of the HTML code by the relation it has with some elements (child, parent, sibling).
+
+- `>`  Matches to direct child elements.
+- `+` Applies changes to the adjacent sibling. The very next element.
+- `~` Applies changes to all following siblings.
+
+```CSS
+section > p {
+  /* This code will be applied to all paragraphs whose parent is the section element. */
+}
+h1 + p {
+  /* This code will be applied to the paragraph which appears right after the h1. Only to this single paragraph. */
+}
+h1 ~ p {
+  /* This code will be applied to all paragraphs which appear after the h1. */
+}
+```
