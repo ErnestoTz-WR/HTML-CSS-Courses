@@ -1,0 +1,32 @@
+doctype html
+block variables
+    - var comm1 = {author: "Ernesto", date: "22-02-2021", text: "Nice job!"}
+    - var comm2 = {author: "Rick", date: "16-04-2021", text: "cool!" }
+
+include ./pug-mixins/comment.pug
+
+style. 
+    .comment{
+        padding: 10px; 
+        font-style: normal; 
+        font-weight: normal; 
+        line-height: 1.333;
+        border: 1px solid #555;
+        width: 250px;
+    }
+    .date { 
+        font-size: 85%;
+        text-align: right;
+        }
+    .author {
+        font-size: 110%;
+        font-weight: bold;
+    }
+
+html
+    head
+        title Mixins in Pug
+    body 
+        h1 Comments application
+        +comment(comm1)
+        +comment(comm2)
