@@ -1,4 +1,4 @@
-# LinkedIn-CSS-Course
+# HTML-CSS-Course
 ## Tips and useful links:
 
 - [CSS - Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/CSS)
